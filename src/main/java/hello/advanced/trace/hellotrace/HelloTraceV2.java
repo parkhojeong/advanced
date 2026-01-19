@@ -75,7 +75,7 @@ public class HelloTraceV2 {
             return "";
         }
 
-        return "| ".repeat(level - 1) +
+        return "|  ".repeat(level - 1) +
                 "|" + prefix;
     }
 }
