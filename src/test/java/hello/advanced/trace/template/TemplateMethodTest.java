@@ -61,4 +61,5 @@ public class TemplateMethodTest {
         log.info("class name={}", template2.getClass());
         template2.execute();
     }
+
 }
