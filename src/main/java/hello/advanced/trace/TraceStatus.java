@@ -15,4 +15,10 @@ public class TraceStatus {
         this.startTimeMs = System.currentTimeMillis();
         this.message = message;
     }
+
+    public TraceStatus(TraceId traceId, String message) {
+        this.traceId = traceId;
+        this.startTimeMs = System.currentTimeMillis();
+        this.message = message;
+    }
 }
