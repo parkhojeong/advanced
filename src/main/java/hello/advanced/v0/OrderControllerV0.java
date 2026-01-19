@@ -1,7 +1,6 @@
 package hello.advanced.v0;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,10 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderControllerV0 {
 
     private final OrderServiceV0 orderService;
+    private final Logger logger;
 
     @GetMapping("/v0/request")
     public String orderItem(@RequestParam String itemId) {
-        orderService.orderItem(itemId);
+        logger.log("request received", 0);
+
+        orderService.orderItem(itemId, logger);
+
+        logger.log("request processed", 0);
         return "ok";
     }
 }
