@@ -1,4 +1,4 @@
-package hello.advanced.v0;
+package hello.advanced.app.v0;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Scope;

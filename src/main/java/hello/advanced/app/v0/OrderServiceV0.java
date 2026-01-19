@@ -1,6 +1,5 @@
-package hello.advanced.v0;
+package hello.advanced.app.v0;
 
-import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
